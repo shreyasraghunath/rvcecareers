@@ -1672,12 +1672,6 @@ div.selected {
 								-->
 								<td valign="top">
 									<table width="100%" cellspacing="1" cellpadding="2" >
-						
-									
-	
-
-		
-										
 							
 		
 					<tr>
