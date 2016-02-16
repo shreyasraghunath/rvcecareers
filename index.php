@@ -2,9 +2,9 @@
  //include "Connections.php";
 
 $servername = "localhost";
-$username = "admin";
-$password = "TvfBrMtVDNE7qTUs";
-$dbname = "resume";
+$username = "tushi";
+$password = "manja";
+$dbname = "rvcecareers";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
@@ -107,7 +107,7 @@ div.selected {
       <td height="87" colspan="3" valign="top">
       <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="20%" height="25" rowspan="2" class="row-white" ><div align="left"><img src='RVCE_New_Logo.JPG' alt="Logo not available" width="200" height="200"></div></td>
+        	<td width="20%" height="25" rowspan="2" class="row-white" ><div align="right"><img src='RVCE_New_Logo.JPG' alt="Logo not available" width="150" height="150"></div></td>
           <!--<td width="80%"><div align="right"><img src="images/OnlineHeaderFinal.jpg" width="772" height="100"></div></td>-->
         </tr>
       </table>
@@ -135,13 +135,6 @@ div.selected {
 			
             <td align="center" valign="top" height="436">
                 <div>
-					
-
-
-
-
-
-
 
 <html>
 <head>
@@ -188,7 +181,7 @@ div.selected {
 </style>
 </head>
 <body>
-<form name="empResumeSubmissionForm" method="post" action="avc.php" enctype="multipart/form-data">
+<form name="empResumeSubmissionForm" method="post" action="index.php" enctype="multipart/form-data">
 	<input type="hidden" name="formName" value="empResumeSubmissionForm">
 	<input type="hidden" name="method" value="" id="method">
 	<input type="hidden" name="mode" value="" id="mode">
@@ -375,43 +368,19 @@ div.selected {
 									 <div id="department1">
 									 <select name="departmentId" id="departmentId" class="combolarge"><option value="">Select</option>
 									   	
-									   		<option value="109">CENTRE FOR ADVANCED RESEARCH &amp; TRAINING</option>
-<option value="37">CHEMISTRY</option>
-<option value="17">COMMERCE</option>
-<option value="33">COMPUTER SCIENCE</option>
-<option value="42">ECONOMICS</option>
-<option value="110">ENGINEERING AUTOMOBILE</option>
-<option value="74">ENGINEERING CIVIL</option>
-<option value="95">ENGINEERING CSE</option>
-<option value="71">ENGINEERING ECE</option>
-<option value="72">ENGINEERING EEE</option>
-<option value="70">ENGINEERING IT</option>
-<option value="73">ENGINEERING MECHANICAL</option>
-<option value="54">ENGLISH</option>
-<option value="39">HOTEL MANAGEMENT</option>
-<option value="97">INSTITUTE OF MANAGEMENT (FINANCE)</option>
-<option value="101">INSTITUTE OF MANAGEMENT (GENERAL)</option>
-<option value="98">INSTITUTE OF MANAGEMENT (HR)</option>
-<option value="100">INSTITUTE OF MANAGEMENT (MARKETING)</option>
-<option value="99">INSTITUTE OF MANAGEMENT (OPERATIONS)</option>
-<option value="118">INTERNATIONAL STUDIES AND HISTORY</option>
-<option value="43">LANGUAGES</option>
-<option value="36">LIFE SCIENCES</option>
-<option value="47">MANAGEMENT STUDIES</option>
-<option value="21">MATHEMATICS AND STATISTICS</option>
-<option value="30">MEDIA STUDIES</option>
-<option value="41">PHILOSOPHY AND THEOLOGY</option>
-<option value="56">PHYSICAL EDUCATION</option>
-<option value="16">PHYSICS AND ELECTRONICS</option>
-<option value="48">PROFESSIONAL STUDIES</option>
-<option value="13">PSYCHOLOGY</option>
-<option value="44">SCHOOL OF EDUCATION</option>
-<option value="23">SCHOOL OF LAW CORE</option>
-<option value="76">SCIENCES AND HUMANITIES</option>
-<option value="20">SOCIAL WORK</option>
-<option value="14">SOCIOLOGY</option>
-<option value="53">THEATRE AND PERFORMING ARTS</option>
-<option value="49">TOURISM STUDIES</option></select>
+									   		
+<option value="1">Biotechnology</option>
+<option value="2">Chemical Engineering</option>
+<option value="3">Computer Science and Engineering</option>
+<option value="4">Electronics and Communication Engineering</option>
+<option value="5">Electrical and Electronics Engineering</option>
+<option value="6">Industrial Engineering and Management</option>
+<option value="7">Information Science and Engineering</option>
+<option value="8">Instrumentation Technology</option>
+<option value="9">Mechanical Engineering</option>
+<option value="10">Telecommunication Engineering</option>
+<option value="11">Aero Space Engineering</option>
+<option value="54">Electronics and Instrumentation</option>
 								     </div>
 								     
 								     </td>
@@ -422,14 +391,7 @@ div.selected {
 								  </tr>
 								  
 								  <tr>
-							    	<td class="row-even">
-							    	<div align="left">
-							      	Job Code (If Any)
-							    	</div>
-							    	</td>
-								 	<td  class="row-even"  align="left">
-								 	<input type="text" name="jobCode" maxlength="10" size="30" value="" class="textbox">
-									</td>
+							    	
 									<td class="row-even">
 							    	</td>
 								 	<td  class="row-even" >
@@ -501,6 +463,7 @@ div.selected {
 								<td height="17" class="row-even-normal" align="left" width="34.8%">
 									<input type="radio" name="gender" value="MALE">Male
 									<input type="radio" name="gender" value="FEMALE">Female
+									<input type="radio" name="gender" value="OTHER">Other
 								</td> 	
 								</tr>
 								
@@ -768,34 +731,15 @@ div.selected {
 							<div align="left">
 							Religion<span class="Mandatory">*</span></div></td>
 							<td height="25" class="row-even"  align="left" >
-								<select name="religionId" onchange="getIsMinority(this.value)" id="religionId" class="combolarge"><option value="">Select</option>
-									
-								  		<option value="6">African Traditional  Diaspori</option>
-<option value="7">Agnostic</option>
-<option value="8">Atheist</option>
-<option value="28">Baha i</option>
-<option value="10">Buddhism</option>
-<option value="11">Cao Dai</option>
-<option value="12">Chinese traditional religion</option>
-<option value="27">Christianity Catholic</option>
-<option value="26">Christianity Orthodox</option>
-<option value="34">Christianity Others</option>
-<option value="25">Christianity Protestant</option>
-<option value="2">Hinduism</option>
-<option value="3">Islam</option>
-<option value="4">Jainism</option>
-<option value="13">Juche</option>
-<option value="14">Judaism</option>
-<option value="30">Neo-Paganism</option>
-<option value="31">Nonreligious</option>
-<option value="17">Rastafarianism</option>
-<option value="18">Secular</option>
-<option value="19">Shinto</option>
-<option value="5">Sikhism</option>
-<option value="21">Tenrikyo</option>
-<option value="32">Unitarian Universalism</option>
-<option value="23">Zoroastrianism</option>
-<option value="33">primal indigenous</option></select> 
+								<select name="religionId" onchange="getIsMinority(this.value)" id="religionId" class="combolarge">
+<option value="">Select</option>
+<option value="6">Buddhism</option>
+<option value="7">Christianity</option>
+<option value="8">Hindu</option>
+<option value="28">Islam</option>
+<option value="10">Jainism</option>
+<option value="11">Atheist</option>
+</select> 
 							 </td>
 							 </tr>
 							  <tr> 
